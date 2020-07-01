@@ -21,3 +21,7 @@ variable "deployment_environment" {
 variable "google_domain_name" {
   default = "fuchicorp.com"
 }
+
+variable "replicas" {
+  default = "3"
+}
