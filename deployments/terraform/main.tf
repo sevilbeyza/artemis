@@ -4,7 +4,7 @@ module "artemis-deploy" {
   deployment_name        = "artemis"
   deployment_environment = "${var.deployment_environment}"
   deployment_endpoint    = "${lookup(var.deployment_endpoint, "${var.deployment_environment}")}.${var.google_domain_name}" 
-  deployment_path        = "isitup"
+  deployment_path        = "artemis"
 
   template_custom_vars  = {     
     deployment_image     = "${var.deployment_image}"    
