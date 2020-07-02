@@ -3,10 +3,7 @@ kind: Service
 metadata:
   name: {{ include "artemis.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "artemis.name" . }}
-    helm.sh/chart: {{ include "artemis.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{ include "artemis.labels" . | indent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
