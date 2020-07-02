@@ -26,7 +26,7 @@ ingress:
     paths:
     - "/"
   tls: 
-  - secretName: source-kube-tls
+  - secretName: chart-artemis-tls
     hosts:
     - ${deployment_endpoint}
 
