@@ -5,7 +5,7 @@ variable "deployment_endpoint" {
     test  = "test.artemis"
     dev  = "dev.artemis"
     qa   = "qa.artemis"
-    prod = "prod.artemis"
+    prod = "artemis"
     stage = "stage.artemis"
   }
 }
